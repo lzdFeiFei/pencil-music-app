@@ -1,8 +1,25 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Inter, Instrument_Serif, DM_Mono } from 'next/font/google'
 import './globals.css'
+import Sidebar from '@/components/layout/Sidebar'
+import PlayerBar from '@/components/layout/PlayerBar'
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({
+  subsets: ['latin'],
+  variable: '--font-inter',
+})
+
+const instrumentSerif = Instrument_Serif({
+  subsets: ['latin'],
+  weight: ['400'],
+  variable: '--font-instrument-serif',
+})
+
+const dmMono = DM_Mono({
+  subsets: ['latin'],
+  weight: ['400', '500'],
+  variable: '--font-dm-mono',
+})
 
 export const metadata: Metadata = {
   title: 'Cloud Music - 网易云音乐风格应用',
@@ -16,8 +33,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="zh-CN">
-      <body className={inter.className}>
-        {children}
+      <body className={`${inter.variable} ${instrumentSerif.variable} ${dmMono.variable} ${inter.className}`}>
+        <Sidebar />
+        <main className="ml-60 mb-20">
+          {children}
+        </main>
+        <PlayerBar />
       </body>
     </html>
   )

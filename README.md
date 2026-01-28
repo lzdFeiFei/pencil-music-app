@@ -158,4 +158,4 @@ MIT
 
 - [设计文件](./pencil-new.pen)
 - [GitHub 仓库](https://github.com/lzdFeiFei/pencil-music-app)
-- [实现计划](C:\Users\pc\.claude\plans\parallel-hatching-backus.md)
+- [实现计划](./IMPLEMENTATION_PLAN.md)
