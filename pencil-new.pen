@@ -169,7 +169,8 @@
                               "fill": "#8B8B90",
                               "content": "播客",
                               "fontFamily": "Inter",
-                              "fontSize": 14
+                              "fontSize": 14,
+                              "fontWeight": "normal"
                             }
                           ]
                         },
@@ -202,7 +203,8 @@
                               "fill": "#8B8B90",
                               "content": "视频",
                               "fontFamily": "Inter",
-                              "fontSize": 14
+                              "fontSize": 14,
+                              "fontWeight": "normal"
                             }
                           ]
                         },
@@ -235,7 +237,8 @@
                               "fill": "#8B8B90",
                               "content": "朋友",
                               "fontFamily": "Inter",
-                              "fontSize": 14
+                              "fontSize": 14,
+                              "fontWeight": "normal"
                             }
                           ]
                         },
@@ -268,7 +271,8 @@
                               "fill": "#8B8B90",
                               "content": "直播",
                               "fontFamily": "Inter",
-                              "fontSize": 14
+                              "fontSize": 14,
+                              "fontWeight": "normal"
                             }
                           ]
                         }
@@ -322,7 +326,8 @@
                               "fill": "#8B8B90",
                               "content": "本地音乐",
                               "fontFamily": "Inter",
-                              "fontSize": 14
+                              "fontSize": 14,
+                              "fontWeight": "normal"
                             }
                           ]
                         },
@@ -355,7 +360,8 @@
                               "fill": "#8B8B90",
                               "content": "下载管理",
                               "fontFamily": "Inter",
-                              "fontSize": 14
+                              "fontSize": 14,
+                              "fontWeight": "normal"
                             }
                           ]
                         },
@@ -388,7 +394,8 @@
                               "fill": "#8B8B90",
                               "content": "我的音乐云盘",
                               "fontFamily": "Inter",
-                              "fontSize": 14
+                              "fontSize": 14,
+                              "fontWeight": "normal"
                             }
                           ]
                         },
@@ -421,7 +428,8 @@
                               "fill": "#8B8B90",
                               "content": "我的收藏",
                               "fontFamily": "Inter",
-                              "fontSize": 14
+                              "fontSize": 14,
+                              "fontWeight": "normal"
                             }
                           ]
                         }
@@ -508,7 +516,8 @@
                                   "fill": "#6B6B70",
                                   "content": "Lv.8",
                                   "fontFamily": "Inter",
-                                  "fontSize": 11
+                                  "fontSize": 11,
+                                  "fontWeight": "normal"
                                 }
                               ]
                             }
@@ -568,6 +577,7 @@
                           "content": "发现音乐",
                           "fontFamily": "Instrument Serif",
                           "fontSize": 38,
+                          "fontWeight": "normal",
                           "letterSpacing": -1
                         },
                         {
@@ -664,7 +674,8 @@
                               "fill": "#4A4A4E",
                               "content": "搜索音乐、歌手、歌词",
                               "fontFamily": "Inter",
-                              "fontSize": 13
+                              "fontSize": 13,
+                              "fontWeight": "normal"
                             }
                           ]
                         },
@@ -691,7 +702,8 @@
                               "fill": "#4A4A4E",
                               "content": "⌘K",
                               "fontFamily": "DM Mono",
-                              "fontSize": 11
+                              "fontSize": 11,
+                              "fontWeight": "normal"
                             }
                           ]
                         }
@@ -840,7 +852,8 @@
                                   "content": "根据你的音乐口味生成",
                                   "lineHeight": 1.4,
                                   "fontFamily": "Inter",
-                                  "fontSize": 12
+                                  "fontSize": 12,
+                                  "fontWeight": "normal"
                                 }
                               ]
                             }
@@ -923,7 +936,8 @@
                                   "content": "收藏你最爱的歌曲",
                                   "lineHeight": 1.4,
                                   "fontFamily": "Inter",
-                                  "fontSize": 12
+                                  "fontSize": 12,
+                                  "fontWeight": "normal"
                                 }
                               ]
                             }
@@ -1006,7 +1020,8 @@
                                   "content": "最受欢迎的音乐排行",
                                   "lineHeight": 1.4,
                                   "fontFamily": "Inter",
-                                  "fontSize": 12
+                                  "fontSize": 12,
+                                  "fontWeight": "normal"
                                 }
                               ]
                             }
@@ -1089,7 +1104,8 @@
                                   "content": "发现最新发布的音乐",
                                   "lineHeight": 1.4,
                                   "fontFamily": "Inter",
-                                  "fontSize": 12
+                                  "fontSize": 12,
+                                  "fontWeight": "normal"
                                 }
                               ]
                             }
@@ -1196,7 +1212,8 @@
                       "fill": "#6B6B70",
                       "content": "艺术家",
                       "fontFamily": "Inter",
-                      "fontSize": 12
+                      "fontSize": 12,
+                      "fontWeight": "normal"
                     }
                   ]
                 },
@@ -1319,7 +1336,8 @@
                       "fill": "#6B6B70",
                       "content": "0:00",
                       "fontFamily": "DM Mono",
-                      "fontSize": 11
+                      "fontSize": 11,
+                      "fontWeight": "normal"
                     },
                     {
                       "type": "frame",
@@ -1366,7 +1384,8 @@
                       "fill": "#6B6B70",
                       "content": "3:45",
                       "fontFamily": "DM Mono",
-                      "fontSize": 11
+                      "fontSize": 11,
+                      "fontWeight": "normal"
                     }
                   ]
                 }
@@ -1527,7 +1546,8 @@
                               "fill": "#8B8B90",
                               "content": "发现音乐",
                               "fontFamily": "Inter",
-                              "fontSize": 14
+                              "fontSize": 14,
+                              "fontWeight": "normal"
                             }
                           ]
                         },
@@ -1596,7 +1616,8 @@
                               "fill": "#8B8B90",
                               "content": "视频",
                               "fontFamily": "Inter",
-                              "fontSize": 14
+                              "fontSize": 14,
+                              "fontWeight": "normal"
                             }
                           ]
                         },
@@ -1629,7 +1650,8 @@
                               "fill": "#8B8B90",
                               "content": "朋友",
                               "fontFamily": "Inter",
-                              "fontSize": 14
+                              "fontSize": 14,
+                              "fontWeight": "normal"
                             }
                           ]
                         },
@@ -1662,7 +1684,8 @@
                               "fill": "#8B8B90",
                               "content": "直播",
                               "fontFamily": "Inter",
-                              "fontSize": 14
+                              "fontSize": 14,
+                              "fontWeight": "normal"
                             }
                           ]
                         }
@@ -1716,7 +1739,8 @@
                               "fill": "#8B8B90",
                               "content": "本地音乐",
                               "fontFamily": "Inter",
-                              "fontSize": 14
+                              "fontSize": 14,
+                              "fontWeight": "normal"
                             }
                           ]
                         },
@@ -1749,7 +1773,8 @@
                               "fill": "#8B8B90",
                               "content": "下载管理",
                               "fontFamily": "Inter",
-                              "fontSize": 14
+                              "fontSize": 14,
+                              "fontWeight": "normal"
                             }
                           ]
                         },
@@ -1782,7 +1807,8 @@
                               "fill": "#8B8B90",
                               "content": "我的音乐云盘",
                               "fontFamily": "Inter",
-                              "fontSize": 14
+                              "fontSize": 14,
+                              "fontWeight": "normal"
                             }
                           ]
                         },
@@ -1815,7 +1841,8 @@
                               "fill": "#8B8B90",
                               "content": "我的收藏",
                               "fontFamily": "Inter",
-                              "fontSize": 14
+                              "fontSize": 14,
+                              "fontWeight": "normal"
                             }
                           ]
                         }
@@ -1902,7 +1929,8 @@
                                   "fill": "#6B6B70",
                                   "content": "Lv.8",
                                   "fontFamily": "Inter",
-                                  "fontSize": 11
+                                  "fontSize": 11,
+                                  "fontWeight": "normal"
                                 }
                               ]
                             }
@@ -1962,6 +1990,7 @@
                           "content": "播客",
                           "fontFamily": "Instrument Serif",
                           "fontSize": 38,
+                          "fontWeight": "normal",
                           "letterSpacing": -1
                         },
                         {
@@ -2058,7 +2087,8 @@
                               "fill": "#4A4A4E",
                               "content": "搜索播客、主播",
                               "fontFamily": "Inter",
-                              "fontSize": 13
+                              "fontSize": 13,
+                              "fontWeight": "normal"
                             }
                           ]
                         },
@@ -2085,7 +2115,8 @@
                               "fill": "#4A4A4E",
                               "content": "⌘K",
                               "fontFamily": "DM Mono",
-                              "fontSize": 11
+                              "fontSize": 11,
+                              "fontWeight": "normal"
                             }
                           ]
                         }
@@ -2234,7 +2265,8 @@
                                   "content": "探讨最新科技趋势",
                                   "lineHeight": 1.4,
                                   "fontFamily": "Inter",
-                                  "fontSize": 12
+                                  "fontSize": 12,
+                                  "fontWeight": "normal"
                                 }
                               ]
                             }
@@ -2317,7 +2349,8 @@
                                   "content": "分享音乐背后的故事",
                                   "lineHeight": 1.4,
                                   "fontFamily": "Inter",
-                                  "fontSize": 12
+                                  "fontSize": 12,
+                                  "fontWeight": "normal"
                                 }
                               ]
                             }
@@ -2400,7 +2433,8 @@
                                   "content": "每周推荐好书",
                                   "lineHeight": 1.4,
                                   "fontFamily": "Inter",
-                                  "fontSize": 12
+                                  "fontSize": 12,
+                                  "fontWeight": "normal"
                                 }
                               ]
                             }
@@ -2483,7 +2517,8 @@
                                   "content": "轻松的日常对话",
                                   "lineHeight": 1.4,
                                   "fontFamily": "Inter",
-                                  "fontSize": 12
+                                  "fontSize": 12,
+                                  "fontWeight": "normal"
                                 }
                               ]
                             }
@@ -2590,7 +2625,8 @@
                       "fill": "#6B6B70",
                       "content": "艺术家",
                       "fontFamily": "Inter",
-                      "fontSize": 12
+                      "fontSize": 12,
+                      "fontWeight": "normal"
                     }
                   ]
                 },
@@ -2713,7 +2749,8 @@
                       "fill": "#6B6B70",
                       "content": "0:00",
                       "fontFamily": "DM Mono",
-                      "fontSize": 11
+                      "fontSize": 11,
+                      "fontWeight": "normal"
                     },
                     {
                       "type": "frame",
@@ -2760,7 +2797,8 @@
                       "fill": "#6B6B70",
                       "content": "3:45",
                       "fontFamily": "DM Mono",
-                      "fontSize": 11
+                      "fontSize": 11,
+                      "fontWeight": "normal"
                     }
                   ]
                 }
@@ -2921,7 +2959,8 @@
                               "fill": "#8B8B90",
                               "content": "发现音乐",
                               "fontFamily": "Inter",
-                              "fontSize": 14
+                              "fontSize": 14,
+                              "fontWeight": "normal"
                             }
                           ]
                         },
@@ -2956,7 +2995,8 @@
                               "fill": "#8B8B90",
                               "content": "播客",
                               "fontFamily": "Inter",
-                              "fontSize": 14
+                              "fontSize": 14,
+                              "fontWeight": "normal"
                             }
                           ]
                         },
@@ -3025,7 +3065,8 @@
                               "fill": "#8B8B90",
                               "content": "朋友",
                               "fontFamily": "Inter",
-                              "fontSize": 14
+                              "fontSize": 14,
+                              "fontWeight": "normal"
                             }
                           ]
                         },
@@ -3058,7 +3099,8 @@
                               "fill": "#8B8B90",
                               "content": "直播",
                               "fontFamily": "Inter",
-                              "fontSize": 14
+                              "fontSize": 14,
+                              "fontWeight": "normal"
                             }
                           ]
                         }
@@ -3112,7 +3154,8 @@
                               "fill": "#8B8B90",
                               "content": "本地音乐",
                               "fontFamily": "Inter",
-                              "fontSize": 14
+                              "fontSize": 14,
+                              "fontWeight": "normal"
                             }
                           ]
                         },
@@ -3145,7 +3188,8 @@
                               "fill": "#8B8B90",
                               "content": "下载管理",
                               "fontFamily": "Inter",
-                              "fontSize": 14
+                              "fontSize": 14,
+                              "fontWeight": "normal"
                             }
                           ]
                         },
@@ -3178,7 +3222,8 @@
                               "fill": "#8B8B90",
                               "content": "我的音乐云盘",
                               "fontFamily": "Inter",
-                              "fontSize": 14
+                              "fontSize": 14,
+                              "fontWeight": "normal"
                             }
                           ]
                         },
@@ -3211,7 +3256,8 @@
                               "fill": "#8B8B90",
                               "content": "我的收藏",
                               "fontFamily": "Inter",
-                              "fontSize": 14
+                              "fontSize": 14,
+                              "fontWeight": "normal"
                             }
                           ]
                         }
@@ -3298,7 +3344,8 @@
                                   "fill": "#6B6B70",
                                   "content": "Lv.8",
                                   "fontFamily": "Inter",
-                                  "fontSize": 11
+                                  "fontSize": 11,
+                                  "fontWeight": "normal"
                                 }
                               ]
                             }
@@ -3358,6 +3405,7 @@
                           "content": "视频",
                           "fontFamily": "Instrument Serif",
                           "fontSize": 38,
+                          "fontWeight": "normal",
                           "letterSpacing": -1
                         },
                         {
@@ -3454,7 +3502,8 @@
                               "fill": "#4A4A4E",
                               "content": "搜索视频、UP主",
                               "fontFamily": "Inter",
-                              "fontSize": 13
+                              "fontSize": 13,
+                              "fontWeight": "normal"
                             }
                           ]
                         },
@@ -3481,7 +3530,8 @@
                               "fill": "#4A4A4E",
                               "content": "⌘K",
                               "fontFamily": "DM Mono",
-                              "fontSize": 11
+                              "fontSize": 11,
+                              "fontWeight": "normal"
                             }
                           ]
                         }
@@ -3630,7 +3680,8 @@
                                   "content": "最新最热的音乐视频",
                                   "lineHeight": 1.4,
                                   "fontFamily": "Inter",
-                                  "fontSize": 12
+                                  "fontSize": 12,
+                                  "fontWeight": "normal"
                                 }
                               ]
                             }
@@ -3713,7 +3764,8 @@
                                   "content": "精彩的现场表演",
                                   "lineHeight": 1.4,
                                   "fontFamily": "Inter",
-                                  "fontSize": 12
+                                  "fontSize": 12,
+                                  "fontWeight": "normal"
                                 }
                               ]
                             }
@@ -3796,7 +3848,8 @@
                                   "content": "深度音乐人物访谈",
                                   "lineHeight": 1.4,
                                   "fontFamily": "Inter",
-                                  "fontSize": 12
+                                  "fontSize": 12,
+                                  "fontWeight": "normal"
                                 }
                               ]
                             }
@@ -3879,7 +3932,8 @@
                                   "content": "优秀的翻唱作品",
                                   "lineHeight": 1.4,
                                   "fontFamily": "Inter",
-                                  "fontSize": 12
+                                  "fontSize": 12,
+                                  "fontWeight": "normal"
                                 }
                               ]
                             }
@@ -3986,7 +4040,8 @@
                       "fill": "#6B6B70",
                       "content": "艺术家",
                       "fontFamily": "Inter",
-                      "fontSize": 12
+                      "fontSize": 12,
+                      "fontWeight": "normal"
                     }
                   ]
                 },
@@ -4109,7 +4164,8 @@
                       "fill": "#6B6B70",
                       "content": "0:00",
                       "fontFamily": "DM Mono",
-                      "fontSize": 11
+                      "fontSize": 11,
+                      "fontWeight": "normal"
                     },
                     {
                       "type": "frame",
@@ -4156,7 +4212,8 @@
                       "fill": "#6B6B70",
                       "content": "3:45",
                       "fontFamily": "DM Mono",
-                      "fontSize": 11
+                      "fontSize": 11,
+                      "fontWeight": "normal"
                     }
                   ]
                 }
@@ -4203,8 +4260,139 @@
       "name": "Now Playing",
       "width": 1440,
       "height": 900,
-      "fill": "#0A0A0B",
+      "fill": {
+        "type": "gradient",
+        "gradientType": "radial",
+        "enabled": true,
+        "rotation": 0,
+        "size": {
+          "width": 1.5,
+          "height": 1.5
+        },
+        "colors": [
+          {
+            "color": "#1A0F0F",
+            "position": 0
+          },
+          {
+            "color": "#0A0A0B",
+            "position": 1
+          }
+        ],
+        "center": {
+          "y": 0.3
+        }
+      },
       "children": [
+        {
+          "type": "frame",
+          "id": "CXnFG",
+          "name": "bgLayer",
+          "width": "fill_container",
+          "height": "fill_container",
+          "layout": "none",
+          "children": [
+            {
+              "type": "ellipse",
+              "id": "SOfxN",
+              "x": 200,
+              "y": -100,
+              "name": "glow1",
+              "fill": {
+                "type": "gradient",
+                "gradientType": "radial",
+                "enabled": true,
+                "rotation": 0,
+                "size": {
+                  "width": 1,
+                  "height": 1
+                },
+                "colors": [
+                  {
+                    "color": "#FF5C0033",
+                    "position": 0
+                  },
+                  {
+                    "color": "#FF5C0000",
+                    "position": 1
+                  }
+                ]
+              },
+              "width": 600,
+              "height": 600,
+              "effect": {
+                "type": "blur",
+                "radius": 80
+              }
+            },
+            {
+              "type": "ellipse",
+              "id": "nM5hm",
+              "x": 800,
+              "y": 600,
+              "name": "glow2",
+              "fill": {
+                "type": "gradient",
+                "gradientType": "radial",
+                "enabled": true,
+                "rotation": 0,
+                "size": {
+                  "width": 1,
+                  "height": 1
+                },
+                "colors": [
+                  {
+                    "color": "#22C55E22",
+                    "position": 0
+                  },
+                  {
+                    "color": "#22C55E00",
+                    "position": 1
+                  }
+                ]
+              },
+              "width": 400,
+              "height": 400,
+              "effect": {
+                "type": "blur",
+                "radius": 60
+              }
+            },
+            {
+              "type": "ellipse",
+              "id": "tW5gp",
+              "x": -100,
+              "y": 400,
+              "name": "glow3",
+              "fill": {
+                "type": "gradient",
+                "gradientType": "radial",
+                "enabled": true,
+                "rotation": 0,
+                "size": {
+                  "width": 1,
+                  "height": 1
+                },
+                "colors": [
+                  {
+                    "color": "#FF8A4C22",
+                    "position": 0
+                  },
+                  {
+                    "color": "#FF8A4C00",
+                    "position": 1
+                  }
+                ]
+              },
+              "width": 500,
+              "height": 500,
+              "effect": {
+                "type": "blur",
+                "radius": 70
+              }
+            }
+          ]
+        },
         {
           "type": "frame",
           "id": "e0O1N",
@@ -4382,6 +4570,7 @@
                   "content": "歌曲名称",
                   "fontFamily": "Instrument Serif",
                   "fontSize": 32,
+                  "fontWeight": "normal",
                   "letterSpacing": -1
                 },
                 {
@@ -4391,7 +4580,8 @@
                   "fill": "#8B8B90",
                   "content": "艺术家名称",
                   "fontFamily": "Inter",
-                  "fontSize": 16
+                  "fontSize": 16,
+                  "fontWeight": "normal"
                 }
               ]
             },
@@ -4418,7 +4608,8 @@
                       "fill": "#6B6B70",
                       "content": "1:23",
                       "fontFamily": "DM Mono",
-                      "fontSize": 13
+                      "fontSize": 13,
+                      "fontWeight": "normal"
                     },
                     {
                       "type": "frame",
@@ -4465,7 +4656,8 @@
                       "fill": "#6B6B70",
                       "content": "3:45",
                       "fontFamily": "DM Mono",
-                      "fontSize": 13
+                      "fontSize": 13,
+                      "fontWeight": "normal"
                     }
                   ]
                 }
@@ -4700,7 +4892,8 @@
                   "content": "这是第一句歌词",
                   "lineHeight": 1.6,
                   "fontFamily": "Inter",
-                  "fontSize": 16
+                  "fontSize": 16,
+                  "fontWeight": "normal"
                 },
                 {
                   "type": "text",
@@ -4712,7 +4905,8 @@
                   "content": "这是第二句歌词",
                   "lineHeight": 1.6,
                   "fontFamily": "Inter",
-                  "fontSize": 16
+                  "fontSize": 16,
+                  "fontWeight": "normal"
                 },
                 {
                   "type": "text",
@@ -4724,7 +4918,8 @@
                   "content": "这是第三句歌词",
                   "lineHeight": 1.6,
                   "fontFamily": "Inter",
-                  "fontSize": 16
+                  "fontSize": 16,
+                  "fontWeight": "normal"
                 },
                 {
                   "type": "text",
@@ -4736,7 +4931,8 @@
                   "content": "这是第四句歌词",
                   "lineHeight": 1.6,
                   "fontFamily": "Inter",
-                  "fontSize": 16
+                  "fontSize": 16,
+                  "fontWeight": "normal"
                 }
               ]
             }
