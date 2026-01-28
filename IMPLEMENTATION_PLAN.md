@@ -15,13 +15,25 @@
   - [x] 提交并推送到 GitHub
   - [ ] 待用户执行: 运行 `pnpm install` 安装依赖
 
-- [ ] **阶段 2: 核心布局组件** (进行中)
-  - [ ] 创建根布局 (app/layout.tsx)
-  - [ ] 构建侧边栏组件 (Sidebar.tsx)
-  - [ ] 构建播放器栏组件 (PlayerBar.tsx)
+- [x] **阶段 2: 核心布局组件** (已完成 - 2026-01-28)
+  - [x] 创建根布局 (app/layout.tsx) - 集成侧边栏和播放器栏
+  - [x] 构建侧边栏组件 (Sidebar.tsx) - 240px 宽度，导航菜单
+  - [x] 构建播放器栏组件 (PlayerBar.tsx) - 80px 高度，播放控制
 
-- [ ] **阶段 3: 音频播放器核心**
-- [ ] **阶段 4: 页面实现**
+- [x] **阶段 3: 音频播放器核心** (已完成 - 2026-01-28)
+  - [x] 创建 Zustand Store (store/playerStore.ts) - 播放器状态管理
+  - [x] 实现音频管理器 (lib/audio/audioManager.ts) - 封装 Howler.js
+  - [x] 创建 useAudioPlayer Hook - 连接状态和音频管理器
+  - [x] 更新 PlayerBar 连接到 store - 完整的播放控制
+
+- [x] **阶段 4: 页面实现** (部分完成 - 2026-01-28)
+  - [x] 主页 (app/page.tsx) - 发现音乐，搜索栏，推荐歌单
+  - [x] 播客页面 (app/podcast/page.tsx) - 热门播客网格
+  - [x] 视频页面 (app/video/page.tsx) - 推荐视频网格
+  - [x] 正在播放页面 (app/now-playing/page.tsx) - 全屏播放，歌词面板
+  - [ ] 歌单卡片组件优化
+  - [ ] 集成真实 API 数据
+
 - [ ] **阶段 5: API 集成**
 - [ ] **阶段 6: 高级功能**
 - [ ] **阶段 7: 视觉优化和动画**
@@ -34,6 +46,9 @@
 | 日期 | 阶段 | 变更内容 |
 |------|------|---------|
 | 2026-01-28 | 阶段 1 | 项目初始化完成，配置文件创建，提交到 GitHub |
+| 2026-01-28 | 阶段 2 | 核心布局组件完成：侧边栏、播放器栏、根布局 |
+| 2026-01-28 | 阶段 3 | 音频播放器核心完成：Zustand store、audioManager、useAudioPlayer Hook |
+| 2026-01-28 | 阶段 4 | 基础页面完成：主页、播客、视频、Now Playing 页面 |
 
 ---
 

@@ -14,29 +14,34 @@ import {
   Repeat,
   Repeat1
 } from 'lucide-react'
-import type { Song, RepeatMode } from '@/types'
+import { usePlayerStore } from '@/store/playerStore'
+import { useAudioPlayer } from '@/lib/audio/useAudioPlayer'
 
 export default function PlayerBar() {
-  // 临时状态 - 稍后会连接到 Zustand store
-  const [isPlaying, setIsPlaying] = useState(false)
-  const [currentTime, setCurrentTime] = useState(0)
-  const [duration, setDuration] = useState(240) // 4 分钟
-  const [volume, setVolume] = useState(0.7)
-  const [isMuted, setIsMuted] = useState(false)
-  const [isLiked, setIsLiked] = useState(false)
-  const [shuffle, setShuffle] = useState(false)
-  const [repeat, setRepeat] = useState<RepeatMode>('off')
+  // 从 store 获取状态
+  const {
+    currentSong,
+    isPlaying,
+    currentTime,
+    duration,
+    volume,
+    isMuted,
+    shuffle,
+    repeat,
+    togglePlay,
+    playNext,
+    playPrevious,
+    setVolume,
+    toggleMute,
+    toggleShuffle,
+    toggleRepeat,
+  } = usePlayerStore()
 
-  // 临时歌曲数据
-  const currentSong: Song | null = {
-    id: '1',
-    name: '歌曲名称',
-    artist: '艺术家',
-    album: '专辑名称',
-    duration: 240,
-    coverUrl: '',
-    audioUrl: ''
-  }
+  // 使用音频播放器 Hook
+  const { seekTo } = useAudioPlayer()
+
+  // 本地状态（不需要全局管理）
+  const [isLiked, setIsLiked] = useState(false)
 
   const formatTime = (seconds: number) => {
     const mins = Math.floor(seconds / 60)
@@ -46,19 +51,12 @@ export default function PlayerBar() {
 
   const handleProgressChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const newTime = parseFloat(e.target.value)
-    setCurrentTime(newTime)
+    seekTo(newTime)
   }
 
   const handleVolumeChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const newVolume = parseFloat(e.target.value)
     setVolume(newVolume)
-    if (newVolume > 0) setIsMuted(false)
-  }
-
-  const toggleRepeat = () => {
-    if (repeat === 'off') setRepeat('all')
-    else if (repeat === 'all') setRepeat('one')
-    else setRepeat('off')
   }
 
   const RepeatIcon = repeat === 'one' ? Repeat1 : Repeat
@@ -105,7 +103,7 @@ export default function PlayerBar() {
           {/* 控制按钮 */}
           <div className="flex items-center gap-4">
             <button
-              onClick={() => setShuffle(!shuffle)}
+              onClick={toggleShuffle}
               className={`p-2 hover:bg-surfaceHover rounded-full transition-colors ${
                 shuffle ? 'text-primary' : 'text-textSecondary'
               }`}
@@ -113,12 +111,15 @@ export default function PlayerBar() {
               <Shuffle className="w-4 h-4" />
             </button>
 
-            <button className="p-2 hover:bg-surfaceHover rounded-full transition-colors text-textPrimary">
+            <button
+              onClick={playPrevious}
+              className="p-2 hover:bg-surfaceHover rounded-full transition-colors text-textPrimary"
+            >
               <SkipBack className="w-5 h-5" />
             </button>
 
             <button
-              onClick={() => setIsPlaying(!isPlaying)}
+              onClick={togglePlay}
               className="w-10 h-10 bg-primary hover:bg-primaryLight rounded-full flex items-center justify-center transition-colors"
             >
               {isPlaying ? (
@@ -128,7 +129,10 @@ export default function PlayerBar() {
               )}
             </button>
 
-            <button className="p-2 hover:bg-surfaceHover rounded-full transition-colors text-textPrimary">
+            <button
+              onClick={playNext}
+              className="p-2 hover:bg-surfaceHover rounded-full transition-colors text-textPrimary"
+            >
               <SkipForward className="w-5 h-5" />
             </button>
 
@@ -180,7 +184,7 @@ export default function PlayerBar() {
           {/* 音量控制 */}
           <div className="flex items-center gap-2 flex-1">
             <button
-              onClick={() => setIsMuted(!isMuted)}
+              onClick={toggleMute}
               className="p-2 hover:bg-surfaceHover rounded-full transition-colors text-textSecondary hover:text-textPrimary"
             >
               {isMuted || volume === 0 ? (
