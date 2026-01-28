@@ -1,18 +1,11 @@
-import { Search } from 'lucide-react'
+'use client'
 
-// 临时模拟数据
-const mockPlaylists = [
-  { id: '1', name: '每日推荐', playCount: 125000, coverGradient: 'from-orange-500 to-pink-500' },
-  { id: '2', name: '流行热歌', playCount: 856000, coverGradient: 'from-blue-500 to-cyan-500' },
-  { id: '3', name: '华语精选', playCount: 432000, coverGradient: 'from-purple-500 to-indigo-500' },
-  { id: '4', name: '欧美经典', playCount: 678000, coverGradient: 'from-green-500 to-teal-500' },
-  { id: '5', name: '轻音乐', playCount: 234000, coverGradient: 'from-yellow-500 to-orange-500' },
-  { id: '6', name: 'R&B Soul', playCount: 345000, coverGradient: 'from-red-500 to-rose-500' },
-  { id: '7', name: '摇滚乐', playCount: 567000, coverGradient: 'from-gray-600 to-gray-800' },
-  { id: '8', name: '电子音乐', playCount: 789000, coverGradient: 'from-violet-500 to-purple-500' },
-]
+import { Search } from 'lucide-react'
+import Image from 'next/image'
+import { useRecommendedPlaylists } from '@/lib/api/useRecommendedPlaylists'
 
 export default function Home() {
+  const { data, isLoading, error } = useRecommendedPlaylists(8)
   return (
     <div className="min-h-screen p-12">
       {/* 页面标题 */}
@@ -46,41 +39,64 @@ export default function Home() {
           </button>
         </div>
 
-        {/* 歌单网格 */}
-        <div className="grid grid-cols-4 gap-6">
-          {mockPlaylists.map((playlist) => (
-            <div
-              key={playlist.id}
-              className="group cursor-pointer"
-            >
-              {/* 封面 */}
-              <div className="relative aspect-square mb-4 rounded-xl overflow-hidden bg-gradient-to-br hover:scale-[1.02] transition-transform duration-200">
-                <div className={`absolute inset-0 bg-gradient-to-br ${playlist.coverGradient} opacity-80`} />
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="w-12 h-12 rounded-full bg-white/10 backdrop-blur-sm flex items-center justify-center">
-                    <div className="w-8 h-8 rounded-full bg-white/20" />
-                  </div>
-                </div>
-                {/* 悬停时的播放按钮 */}
-                <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-                  <div className="w-14 h-14 bg-primary rounded-full flex items-center justify-center transform scale-90 group-hover:scale-100 transition-transform">
-                    <svg className="w-6 h-6 text-white ml-1" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M8 5v14l11-7z" />
-                    </svg>
-                  </div>
-                </div>
+        {/* 加载状态 */}
+        {isLoading && (
+          <div className="grid grid-cols-4 gap-6">
+            {Array.from({ length: 8 }).map((_, i) => (
+              <div key={i} className="animate-pulse">
+                <div className="aspect-square mb-4 rounded-xl bg-surface" />
+                <div className="h-4 bg-surface rounded mb-2 w-3/4" />
+                <div className="h-3 bg-surface rounded w-1/2" />
               </div>
+            ))}
+          </div>
+        )}
 
-              {/* 歌单信息 */}
-              <h3 className="text-sm font-medium text-textPrimary mb-1 truncate group-hover:text-primary transition-colors">
-                {playlist.name}
-              </h3>
-              <p className="text-xs text-textTertiary">
-                {(playlist.playCount / 10000).toFixed(1)}万次播放
-              </p>
-            </div>
-          ))}
-        </div>
+        {/* 错误状态 */}
+        {error && (
+          <div className="text-center py-12">
+            <p className="text-textSecondary">加载失败，请稍后重试</p>
+          </div>
+        )}
+
+        {/* 歌单网格 */}
+        {data?.playlists && (
+          <div className="grid grid-cols-4 gap-6">
+            {data.playlists.map((playlist) => (
+              <div
+                key={playlist.id}
+                className="group cursor-pointer"
+              >
+                {/* 封面 */}
+                <div className="relative aspect-square mb-4 rounded-xl overflow-hidden bg-surface hover:scale-[1.02] transition-transform duration-200">
+                  <Image
+                    src={playlist.coverImgUrl}
+                    alt={playlist.name}
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
+                  />
+                  {/* 悬停时的播放按钮 */}
+                  <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                    <div className="w-14 h-14 bg-primary rounded-full flex items-center justify-center transform scale-90 group-hover:scale-100 transition-transform">
+                      <svg className="w-6 h-6 text-white ml-1" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M8 5v14l11-7z" />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+
+                {/* 歌单信息 */}
+                <h3 className="text-sm font-medium text-textPrimary mb-1 truncate group-hover:text-primary transition-colors">
+                  {playlist.name}
+                </h3>
+                <p className="text-xs text-textTertiary">
+                  {(playlist.playCount / 10000).toFixed(1)}万次播放
+                </p>
+              </div>
+            ))}
+          </div>
+        )}
       </section>
     </div>
   )

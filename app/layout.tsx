@@ -3,6 +3,7 @@ import { Inter, Instrument_Serif, DM_Mono } from 'next/font/google'
 import './globals.css'
 import Sidebar from '@/components/layout/Sidebar'
 import PlayerBar from '@/components/layout/PlayerBar'
+import { QueryProvider } from '@/lib/providers/QueryProvider'
 
 const inter = Inter({
   subsets: ['latin'],
@@ -34,11 +35,13 @@ export default function RootLayout({
   return (
     <html lang="zh-CN">
       <body className={`${inter.variable} ${instrumentSerif.variable} ${dmMono.variable} ${inter.className}`}>
-        <Sidebar />
-        <main className="ml-60 mb-20">
-          {children}
-        </main>
-        <PlayerBar />
+        <QueryProvider>
+          <Sidebar />
+          <main className="ml-60 mb-20">
+            {children}
+          </main>
+          <PlayerBar />
+        </QueryProvider>
       </body>
     </html>
   )
